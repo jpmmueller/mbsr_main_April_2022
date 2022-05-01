@@ -219,14 +219,15 @@ article {
 }
 
 .cd-spalte h3 {
-    margin: 15px 0px 7px 0px;
+    margin: 15px 0px 4px 0px;
 }
 
-.cd-spalte h4 {
-    margin: 10px 0px 7px 0px;
+.kurs h4 {
+    margin: 10px 0px 0px 0px;
 }
+
 .cd-spalte p {
-    margin: 4px 0px 4px 0px;
+    margin: 0px 0px 4px 0px;
 }
 
 .cd-spalte ul {
@@ -333,29 +334,21 @@ textarea {
     border: solid 1px #b3aca7;
 }
 
-.check_kontakt{
-    margin-left: -8px;
-    width: 50px;
-    height: 30px;
-}
-
-
-
 #submit_kontakt {
-    width: 40%;
+    width: 80%;
     padding: 0;
-    margin: 5px 0px 0px 0px;
+    margin: -5px 0px 0px 0px;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    color: white;
-    background: rgb(27, 189, 13);
+    color: rgb(56, 55, 54);
     outline: none;
     cursor: pointer;
     border: solid 1px #b3aca7;
 }
 
 #submit_kontakt:hover {
-   font-weight: bold;
+    color: white;
+    background: rgba(46, 46, 46, 0.4);
 }
 
 /* KONTAKTFORMULAR Datenschutz --- Kurse und Kontakt Seite --- KONTAKTFORMULAR Datenschutz KONTAKTFORMULAR */
@@ -363,8 +356,8 @@ textarea {
 /* Kontakt Seite */
 
 
-.checkbox_label {
-    font-size: 0.9rem;
+.datenschutz-text-kontakt {
+    max-width: 400px;
 }
 
 #submit_kontakt {
@@ -375,27 +368,27 @@ label.check_kontakt {
     font-size: 0.8rem;
     color: #726659;
     /* Für bessere Treffsicherheit auf Touchscreens: */
-    /* display:inline;
-    margin-top: 1rem; */
+    display: inline-block;
+    margin-top: 1rem;
     line-height: 1rem;
     cursor: pointer;
 }
 
-.checkbox_label a {
-    font-weight: bold;
-}
 
-/* Checkbox Haken Management */
+/* bei gesetztem Haken */
 
 input.check_kontakt:checked~#submit_kontakt {
     display: inline;
     /* blendet Abschicken Button ein */
 }
 
-input.check_kontakt:checked~ .checkbox_label {
-    display: none;
+.datenschutz-text-kontakt a {
+    font-weight: bold;
 }
 
+input.check_kontakt:checked~.datenschutz-text-kontakt {
+    display: none;
+}
 
 /* Formular Kontakt Seite Ende */
 
