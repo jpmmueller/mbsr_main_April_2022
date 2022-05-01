@@ -1,0 +1,711 @@
+body {
+    font-family: Montserrat, sans-serif;
+
+    /* font-family: Roboto, sans-serif; */
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+}
+
+a[href^="http"]::after {
+    font-family: 'Font Awesome 5 Free';
+    content: "  \f35d";
+    font-weight: 900;
+    font-size: 0.6rem;
+    color: black;
+}
+
+.mail-link {
+    font-weight: 600;
+}
+
+ul {
+    margin: 10px 0px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.current a {
+    border: 1px solid black;
+}
+
+header ul,
+footer ul {
+    padding: 0;
+}
+
+.listnav,
+.listfooter {
+    display: inline;
+    list-style: none;
+}
+
+.fett {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.gruen {
+    color: green;
+}
+
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
+header {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px auto;
+}
+
+.header-bg-index {
+    margin: 0px;
+    /* width: 100%; */
+    height: 700px;
+    background: url(../Bilder/huegel_weg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+.header-bg-standard {
+    margin: 0px;
+    /* width: 100%; */
+    height: 300px;
+    background: url(../Bilder/huegel_weg_standard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header a {
+    font-size: 1.3rem;
+    padding: 2px 15px;
+    margin: 0 20px 0 0;
+}
+
+header a:hover {
+    background: rgb(80, 80, 80);
+    border: 1px solid black;
+    color: white;
+}
+
+.header-nav {
+    text-align: right;
+}
+
+.header-nav ul {
+    padding-top: 25px;
+}
+
+.header-logo-index {
+    margin: 250px 0 0 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo-standard {
+    margin: 50px 0 0 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-vertical {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 3.5rem;
+    color: #ff3c00;
+}
+
+.header-logo-vert h1 {
+    margin: 14px 0 0 0;
+    font-size: 3.5rem;
+    color: #ff3c00;
+}
+
+.header-logo-hor h1 {
+    /* margin-bottom: 0px; */
+    font-size: 3.5rem;
+    color: rgb(245, 242, 245);
+}
+
+/* MAIN WRAPPER MAIN WRAPPER MAIN WRAPPER MAIN WRAPPER MAIN WRAPPER MAIN WRAPPER */
+.main-wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.teiler {
+    /* height:1px; */
+    border-bottom: 0.005rem solid rgb(80, 80, 80);
+    width: 500px;
+    margin: 40px auto 20px auto;
+}
+
+/* ARTICLE ARTICLE ARTICLE ARTICLE ARTICLE ARTICLE ARTICLE ARTICLE ARTICLE */
+article {
+    width: 97%;
+    margin: 10px auto;
+    /* min-height: 600px; */
+}
+
+.titel {
+    text-align: center;
+}
+
+.textblock {
+    text-align: left;
+}
+
+.textblock a {
+    font-weight: bold;
+}
+
+.kurstitel h2 {
+    margin: 0 0 0 40px;
+    color: green;
+
+}
+
+.content-einzel h1 {
+    font-weight: normal;
+}
+
+.content-doppel {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 0 30px;
+}
+
+.top-content {
+    margin: 40px 0 40px 0;
+}
+
+.top-content-mbsr {
+    margin: 40px auto 0 auto;
+    width: 700px;
+}
+
+/* KURSE KURSE KURSE KURSE KURSE KURSE KURSE KURSE KURSE KURSE KURSE KURSE */
+
+.cd-spalte,
+.formular .titel {
+    /* text-align: center; */
+    padding: 5px 0 0 0;
+}
+
+.cd-spalte {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.sp-kontakt {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.cd-spalte .textblock {
+    min-height: 100px;
+
+}
+
+.cd-spalte h3 {
+    margin: 15px 0px 7px 0px;
+}
+
+.cd-spalte p {
+    margin: 4px 0px 4px 0px;
+}
+
+.cd-spalte ul {
+    margin: 0px;
+    padding: 0 0 0 5px;
+    list-style-type: none;
+}
+
+.cd-spalte li {
+    padding: 0 0 3px 0px;
+}
+
+.cd-spalte li::before {
+    content: "-";
+    /* Insert content that looks like bullets */
+    padding-right: 10px;
+}
+
+.kurse-titel {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.content-doppel .cd-spalte .kurs p {
+    padding: 0 0 5px 0;
+}
+
+/* ÜBERMICH ÜBERMICH ÜBERMICH ÜBERMICH ÜBERMICH ÜBERMICH ÜBERMICH ÜBERMICH */
+li.taetigkeit {
+    padding: 0 0 10px 0;
+}
+
+.portrait {
+    box-shadow: 5px 10px 15px;
+}
+
+img.mbsr-logo {
+    text-align: center;
+    padding: 40px 0 0 40px;
+}
+
+
+/* KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT KONTAKT */
+
+.kontakt-daten {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.telfaxmail {
+    display: grid;
+    grid-template-columns: 70px auto;
+}
+
+.tefama-buchstaben {
+    text-align: right;
+}
+
+.tefama-nummern {
+    padding: 0 0 0 8px;
+}
+
+.tefama-buchstaben,
+.tefama-nummern {
+    /* padding-bottom: 15px; */
+    line-height: 1.3rem;
+}
+
+/* FORMULAR FORMULAR FORMULAR FORMULAR FORMULAR FORMULAR FORMULAR FORMULAR */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+
+form {
+    /* position: relative; */
+    width: 100%;
+    /* margin: 0px auto; */
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    width: 80%;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: solid 1px #b3aca7;
+    border-bottom: none;
+}
+
+textarea {
+
+    width: 80%;
+
+    height: 165px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    border: solid 1px #b3aca7;
+}
+
+#submit_kontakt {
+    width: 80%;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: rgb(56, 55, 54);
+    outline: none;
+    cursor: pointer;
+    border: solid 1px #b3aca7;
+}
+
+#submit_kontakt:hover {
+    color: white;
+    background: rgba(46, 46, 46, 0.4);
+}
+
+/* KONTAKTFORMULAR Datenschutz --- Kurse und Kontakt Seite --- KONTAKTFORMULAR Datenschutz KONTAKTFORMULAR */
+
+/* Kontakt Seite */
+
+
+.datenschutz-text-kontakt {
+    max-width: 400px;
+}
+
+#submit_kontakt {
+    display: none;
+}
+
+label.check_kontakt {
+    font-size: 0.8rem;
+    color: #726659;
+    /* Für bessere Treffsicherheit auf Touchscreens: */
+    display: inline-block;
+    margin-top: 1rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
+
+
+/* bei gesetztem Haken */
+
+input.check_kontakt:checked~#submit_kontakt {
+    display: inline;
+    /* blendet Abschicken Button ein */
+}
+
+.datenschutz-text-kontakt a {
+    font-weight: bold;
+}
+
+input.check_kontakt:checked~.datenschutz-text-kontakt {
+    display: none;
+}
+
+/* Formular Kontakt Seite Ende */
+
+/* KONTAKTFORMULAR ENDE KONTAKTFORMULAR ENDE KONTAKTFORMULAR ENDE KONTAKTFORMULAR ENDE */
+
+
+/* KARTE KARTE KARTE KARTE KARTE KARTE KARTE KARTE KARTE KARTE KARTE KARTE */
+.karte-links,
+.karte-rechts {
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.karte-links {
+    grid-template-areas: "titel-links text-rechts";
+}
+
+.karte-rechts {
+
+    grid-template-areas: "text-links titel-rechts";
+}
+
+.karte-titel-links {
+    grid-area: titel-links;
+    /* width: 50%; */
+    text-align: right;
+    padding-right: 20px;
+}
+
+.karte-text-rechts {
+    grid-area: text-rechts;
+    /* width: 50%; */
+    text-align: left;
+    padding-left: 15px;
+    border-left: 1px solid green;
+}
+
+
+.karte-titel-rechts {
+    grid-area: titel-rechts;
+    /* width: 50%; */
+    text-align: left;
+    padding-left: 20px;
+    border-left: 1px solid green;
+}
+
+.karte-text-links {
+    grid-area: text-links;
+    /* width: 50%; */
+    text-align: right;
+    padding-right: 15px;
+}
+
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+.footer-wrapper {
+    min-height: 200px;
+    background: rgba(46, 46, 46, 0.4);
+    margin-top: 60px;
+}
+
+footer {
+    width: 1000px;
+    margin: auto;
+    padding: 15px 0 0 15px;
+}
+
+.footer-content-doppel {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.footer-titel p {
+    font-size: 1rem;
+    color: black;
+}
+
+.footer-titel-weiter {
+    color: rgb(58, 57, 57);
+}
+
+li.listfooter-weiter {
+    padding-bottom: 6px;
+}
+
+.footer-nav-weiter,
+.footer-titel-weiter {
+    text-align: right;
+}
+
+footer a {
+    color: #ac3d29;
+}
+
+footer a:hover {
+    background: #ac3d29;
+    border: 1px solid black;
+    color: white;
+}
+
+.footer-abschluss {
+    color: black;
+}
+
+.nach-copy {
+    font-size: 0.7rem;
+    color: black;
+}
+
+
+/* ---------------------------- Cookies ------------------------------- */
+
+#mbmcookie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    padding: 20px;
+    font-size: 14px;
+    font-family: verdana;
+}
+
+#mbmcookie a.button {
+    cursor: pointer;
+    background: #ccc;
+    padding: 8px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    float: right;
+}
+
+#mbmcookie a.button:hover {
+    background-color: #aaa;
+}
+
+.cookie-link {
+    padding: 0 30px 0 30px;
+}
+
+.cookie-ds {
+    color: #ac3d29;
+    padding: 0;
+}
+
+#mbmcookie p.cookiemessage {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------Ende-------------- Cookies -------------Ende------------ */
+
+/* -------------------------- Mail-Template ----------------------------- */
+.mail-ok {
+    display: inline-block;
+    background: green;
+    color: whitesmoke;
+    box-shadow: 2px 4px 3px rgba(58, 57, 57, 0.7);
+}
+
+.mail-bad {
+    display: inline-block;
+    background: rgb(0, 110, 255);
+    color: whitesmoke;
+    box-shadow: 2px 4px 3px rgba(58, 57, 57, 0.7);
+}
+
+.mail-bad,
+.mail-ok h3 {
+    padding: 0 20px;
+}
+
+.mail-bad-link a {
+    font-size: 1.2rem;
+    color: rgb(0, 110, 255);
+}
+
+.go-back {
+    font-size: 1.2rem;
+}
+
+.go-back a::before {
+    font-family: 'Font Awesome 5 Free';
+    content: "  \f060";
+    font-weight: 900;
+    font-size: 1rem;
+    color: black;
+}
+
+.go-back a::after {
+    font-family: 'Font Awesome 5 Free';
+    content: "";
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: black;
+}
+
+/* --------Ende-------------- Mail-Template -------------Ende------------ */
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
+
+/* Tablets und Konsorten */
+@media screen and (max-width:950px) {
+
+    .karte-links,
+    .karte-rechts,
+    .content-doppel,
+    .footer-content-doppel {
+        display: block;
+    }
+
+    .header-bg-index,
+    .header-bg-standard {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 'Logo Nav';
+
+    }
+
+    .header-nav {
+        grid-area: Nav;
+    }
+
+    .header-logo-index {
+        grid-area: Logo;
+    }
+
+    .karte-titel-rechts {
+        padding: 0;
+    }
+
+    .header-nav ul {
+        padding: 10px 0 0 0;
+        margin: 0;
+    }
+
+    .header-nav li {
+        padding: 0 0 15px 0;
+    }
+
+    header a {
+        margin: 0 5px 0 0;
+    }
+
+    .header-nav a {
+        font-weight: 900;
+        color: whitesmoke;
+        background-color: rgba(58, 57, 57, 0.4);
+    }
+
+    .header-nav li {
+        display: block;
+    }
+
+    .header-logo-index {
+        margin: 250px 0 0 40px;
+    }
+
+    .header-logo-standard {
+        margin: 170px 0 0 5px;
+    }
+
+    .header-logo-hor h1,
+    .logo-vertical {
+        font-size: 2.5rem;
+    }
+
+    .top-content-mbsr {
+        width: 100%;
+    }
+
+    .karte-text-rechts,
+    .karte-titel-rechts {
+        border: none;
+    }
+
+    .karte-text-links {
+        text-align: left;
+    }
+
+    .portrait {
+        margin-left: 0px;
+    }
+
+    .sp-kontakt {
+        width: 70%;
+    }
+
+    .kontakt-daten {
+        display: initial;
+    }
+
+    .tefama-nummern a {
+        font-size: 0.8rem;
+    }
+
+    .footer-titel p,
+    .footer-titel-weiter p {
+        font-size: 0.8rem;
+    }
+
+    .listfooter,
+    .listfooter-weiter a {
+        font-size: 0.8rem;
+    }
+
+    .footer-titel-weiter {
+        padding: 10px 0 0 0;
+    }
+
+    .footer-nav-weiter li {
+        padding: 0 0 15px 0;
+    }
+
+    .footer-nav-weiter,
+    .footer-titel-weiter {
+        text-align: left;
+    }
+}

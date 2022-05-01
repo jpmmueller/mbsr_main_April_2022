@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, archive" />
+    <meta name="author" content="Helo Bethge-Rieger">
+    <meta name="description" content="Achtsamkeit (engl. mindfulness) ist ein Moment passiver Geistesgegenwart, in dem ein Mensch hellwach
+        den gegenwärtigen Zustand seiner direkten Umwelt, seines Körpers und seines Gemüts erfährt, ohne von
+        Gedankenströmen, Erinnerungen, Phantasien oder starken Emotionen abgelenkt zu sein, ohne darüber nachzudenken
+        oder diese Wahrnehmungen zu bewerten. ">
+    <meta name="keywords" content="Achtsamkeit, Stressabbau, mbsr ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/all.css"> <!-- FontAwesome -->
+    <title>mbsr im Allgäu | Willkommen zur Achtsamkeit</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-bg-index">
+            <div class="header-nav sticky">
+                <ul>
+                    <li class="listnav current"><a href="index.html">Home</a></li>
+                    <li class="listnav"><a href="was-ist-mbsr.html">mbsr</a></li>
+                    <li class="listnav"><a href="mbsr-kurse.html">Kurse</a></li>
+                    <li class="listnav"><a href="uebermich.html">&Uuml;ber mich</a></li>
+                    <li class="listnav"><a href="mbsr-kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="header-logo-index">
+                <div class="header-logo-vert">
+                    <h1><span class="logo-vertical">mbsr </span></h1>
+                </div>
+
+                <div class="header-logo-hor">
+
+                    <h1>Willkommen<br>im Jetzt</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="main-wrapper">
+        <article>
+            <div class="top-content">
+
+            </div>
+            <div class="content-einzel">
+
+            </div> -->
+    <!-- content-einzel ENDE
+        </article>
+    </div> -->
+    <div class="footer-wrapper">
+        <footer>
+            <div class="footer-content-doppel">
+                <div class="footer-cd-doppel">
+                    <div class="footer-titel">
+                        <p>Helo Bethge-Rieger</p>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li class="listfooter"><a href="impressum.html">Impressum</a> |</li>
+                            <li class="listfooter"><a href="datenschutz.html">Datenschutz</a> |</li>
+                            <li class="listfooter"><a href="geschaeftsbed.html">Allg. Gesch&auml;ftsbedingungen</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-abschluss">
+                        <p>&#169; <span class="nach-copy">2019 Nannenbach 6, 88299 Leutkirch</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-cd-doppel">
+                    <div class="footer-titel-weiter">
+                        <p> Weiterführende Links &#8594;</p>
+                    </div>
+                    <div class="footer-nav-weiter">
+                        <ul>
+
+                            <li class="listfooter-weiter"><a href="https://www.mbsr-verband.de">mbsr-Verband</a></li>
+                            <li class="listfooter-weiter"><a href="https://www.mbsr-freiburg.de">Europ&auml;isches
+                                    Institut
+                                    für Achtsamkeit in Freiburg</a>
+                            </li>
+                            <li class="listfooter-weiter"><a
+                                    href="https://www.supervision-allgaeu.de">Supervision-Allg&auml;u</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Cookie Banner Script Start -->
+    <div id="mbmcookie">
+        <a onClick="var d = new Date();d = new Date(d.getTime() +1000*60*60*24*90);document.cookie = 'mbmcookie=1;expires='+ d.toGMTString() + ';';document.getElementById('mbmcookie').style.display = 'none';"
+            class="button">Akzeptieren</a>
+        <p class="cookiemessage">Diese Website verwendet Cookies. Durch die Nutzung dieser Webseite erkl&auml;ren Sie
+            sich
+            damit einverstanden, dass Cookies gesetzt werden.
+            <a class="cookie-link cookie-what" href="https://cookiesandyou.com">Was sind Cookies überhaupt?</a>
+            <a class="cookie-link cookie-ds" href="./datenschutz.html">Datenschutzerkl&auml;rung</a></p>
+    </div>
+    <script>
+        var r = 0;
+        a = document.cookie;
+        while (a != '') {
+            while (a.substr(0, 1) == ' ') {
+                a = a.substr(1, a.length);
+            }
+            cn = a.substring(0, a.indexOf('='));
+            if (a.indexOf(';') != -1) {
+                cw = a.substring(a.indexOf('=') + 1, a.indexOf(';'));
+            } else {
+                cw = a.substr(a.indexOf('=') + 1, a.length);
+            }
+            if (cn == 'mbmcookie') {
+                r = cw;
+            }
+            i = a.indexOf(';') + 1;
+            if (i == 0) {
+                i = a.length
+            }
+            a = a.substring(i, a.length);
+        }
+        if (r == '1') document.getElementById('mbmcookie').style.display = 'none';
+    </script>
+    <!-- Cookie Banner Script End -->
+
+</body>
+
+</html>
